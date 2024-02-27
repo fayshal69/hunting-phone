@@ -27,10 +27,25 @@
 
     <main class="container mx-auto px-5 md:px-10 lg:px-20 my-6 md:my-8 lg:my-12">
 
+        <!-- loading spin container -->
+        <div class="text-center hidden" id="loadingBar">
+            <span class="loading loading-bars loading-lg text-success"></span>
+        </div>
+
+        <!-- if no data found alert container -->
+        <div class="p-5 md:p-10 bg-slate-100 max-w-max mx-auto rounded hidden" id="noDataFoundMsg">
+            <p class="text-red-400 text-xl">No data found! Please search again.</p>
+        </div>
+
         <!-- mobile phone card container section-->
         <section class="grid gap-4 md:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center" id="phone-card-container">
             
         </section>
+
+        <!-- see more phones button container -->
+        <div class="my-10 text-center hidden" id="see-more-btn">
+            <button class="btn btn-secondary">See More</button>
+        </div>
 
     </main>
     
