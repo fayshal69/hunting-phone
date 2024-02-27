@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunting</title>
+    <!-- tailwind and daisy ui cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- header section -->
+
+    <header class="container mx-auto px-5 md:px-10 lg:px-20">
+        <div class="">
+            <h1 class="text-4xl lg:text-7xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent max-w-max mx-auto py-5 md:py-10">Phone Hunting</h1>
+        </div>
+        <!-- search container -->
+        <div class="bg-gray-200 p-5 lg:p-10 rounded text-center lg:text-left">
+            <input id="search-box" type="text" placeholder="Search here..." class="input input-bordered input-success w-[65%] md:w-full max-w-xs mr-3" />
+            <button class="btn btn-success text-white" onclick="searchPhones()">Search</button>
+        </div>
+    </header>
+
+    <!-- main section  -->
+
+    <main class="container mx-auto px-5 md:px-10 lg:px-20 my-6 md:my-8 lg:my-12">
+
+        <!-- mobile phone card container section-->
+        <section class="grid gap-4 md:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center" id="phone-card-container">
+            
+        </section>
+
+    </main>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
