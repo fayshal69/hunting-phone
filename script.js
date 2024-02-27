@@ -102,7 +102,7 @@ const showPhoneDetails = (details) => {
                 <p><span class="font-semibold">Slug: </span> ${details?.slug || 'Not defined'}</p>
                 <p><span class="font-semibold">Release data: </span> ${details?.releaseDate || 'Not defined'}</p>
                 <p><span class="font-semibold">Brand: </span> ${details?.brand || 'Not defined'}</p>
-                <p><span class="font-semibold">GPS: </span> ${details?.other?.GPS || 'Not defined'}</p>
+                <p><span class="font-semibold">GPS: </span> ${details?.others?.GPS || 'Not defined'}</p>
             </div>
         </div>
     `;
