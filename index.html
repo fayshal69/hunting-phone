@@ -42,9 +42,39 @@
             
         </section>
 
+        <!-- modal container -->
+
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="show-detail-container" class="space-y-4">
+                <div><img src=""></div>
+                <div class="space-y-3">
+                    <h3 class="text-xl font-semibold"></h3>
+                    <div class="space-y-2 opacity-80">
+                        <p><span class="font-semibold">Storage: </span> </p>
+                        <p><span class="font-semibold">Display Size: </span> </p>
+                        <p><span class="font-semibold">Chipset: </span> </p>
+                        <p><span class="font-semibold">Memory: </span> </p>
+                        <p><span class="font-semibold">Slug: </span> </p>
+                        <p><span class="font-semibold">Release data: </span> </p>
+                        <p><span class="font-semibold">Brand: </span> </p>
+                        <p><span class="font-semibold">GPS: </span> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-red-500">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+
         <!-- see more phones button container -->
-        <div class="my-10 text-center hidden" id="see-more-btn">
-            <button class="btn btn-secondary">See More</button>
+        <div class="my-5 md:my-10 text-center hidden" id="see-more-btn">
+            <button class="btn btn-secondary" onclick="seeAllPhones()">See More</button>
         </div>
 
     </main>
