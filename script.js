@@ -35,7 +35,7 @@ const displayPhones = (phones, isSeeAllPhone) => {
         seeMoreBtn.classList.add('hidden');
     }
 
-    for (let phone of phones) {
+    phones.forEach((phone) => {
         // create card div
         const phoneCard = document.createElement('div');
         phoneCard.classList = `card max-w-96 bg-base-100 shadow-xl`;
@@ -52,8 +52,9 @@ const displayPhones = (phones, isSeeAllPhone) => {
             </div>
         `;
         phoneCardContainer.appendChild(phoneCard);
+        // loading bar calling
         handleLoadingBar(false);
-    }
+    })
 }
 
 const searchPhones = (isSeeAllPhone) => {
@@ -63,6 +64,7 @@ const searchPhones = (isSeeAllPhone) => {
         return;
     }
     else {
+        // loading bar calling
         handleLoadingBar(true);
         loadPhones(searchBoxText, isSeeAllPhone);
     }
