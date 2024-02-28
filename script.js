@@ -58,14 +58,14 @@ const displayPhones = (phones, isSeeAllPhone) => {
 }
 
 const searchPhones = (isSeeAllPhone) => {
+    // loading bar calling
+    handleLoadingBar(true);
     const searchBoxText = searchBox.value;
     if (searchBoxText.trim() === '') {
         loadPhones();
         return;
     }
     else {
-        // loading bar calling
-        handleLoadingBar(true);
         loadPhones(searchBoxText, isSeeAllPhone);
     }
 }
