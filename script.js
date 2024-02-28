@@ -20,6 +20,7 @@ const displayPhones = (phones, isSeeAllPhone) => {
     // if no data found
     if (phones.length === 0) {
         noDataFoundMsg.classList.remove('hidden');
+        //turn off the loading bar
         handleLoadingBar(false);
     }
     else {
@@ -53,12 +54,12 @@ const displayPhones = (phones, isSeeAllPhone) => {
         `;
         phoneCardContainer.appendChild(phoneCard);
     })
-    // loading bar calling
+    // loading bar calling for turn off
     handleLoadingBar(false);
 }
 
 const searchPhones = (isSeeAllPhone) => {
-    // loading bar calling
+    // loading bar calling for on
     handleLoadingBar(true);
     const searchBoxText = searchBox.value;
     if (searchBoxText.trim() === '') {
