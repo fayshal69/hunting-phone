@@ -52,9 +52,9 @@ const displayPhones = (phones, isSeeAllPhone) => {
             </div>
         `;
         phoneCardContainer.appendChild(phoneCard);
-        // loading bar calling
-        handleLoadingBar(false);
     })
+    // loading bar calling
+    handleLoadingBar(false);
 }
 
 const searchPhones = (isSeeAllPhone) => {
