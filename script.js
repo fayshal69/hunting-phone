@@ -28,10 +28,11 @@ const displayPhones = (phones, isSeeAllPhone) => {
     }
 
     // only 9 card will be displayed and if see all btn is not clicked
-    if (phones.length > 9 && !isSeeAllPhone) {
+    if (phones.length > 9 && !isSeeAllPhone) {  //here isSeeAllPhone is undefined if not clicked on see all btn
         phones = phones.slice(0, 9);
         seeMoreBtn.classList.remove('hidden');
     }
+    //if clicked on see all btn
     else {
         seeMoreBtn.classList.add('hidden');
     }
