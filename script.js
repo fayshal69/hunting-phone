@@ -95,7 +95,7 @@ const seeDetailsHandler = async (id) => {
 const showPhoneDetails = (details) => {
     const showDetailContainer = document.getElementById('show-detail-container');
     showDetailContainer.innerHTML = `
-        <div class="text-center"><img src="${details.image}" class="inline"></div>
+        <div class="text-center bg-slate-200 py-5 rounded-lg"><img src="${details.image}" class="inline"></div>
         <div class="space-y-3">
             <h3 class="text-xl font-semibold">${details?.name || 'Not defined'}</h3>
             <div class="space-y-2 opacity-80">
